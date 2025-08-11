@@ -44,7 +44,7 @@ composer-classification/
 ├── notebooks/
 │   ├── 01_Data_Preprocessing.ipynb
 │   ├── 02_Model_Training_and_Evaluation.ipynb
-│   └── 03_Inference.ipynb
+│   
 ├── data/
 │   └── (Raw MIDI files for each composer)
 ├── processed_data_split/
