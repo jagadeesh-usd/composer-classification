@@ -4,7 +4,7 @@ This project uses deep learning models, including LSTMs and CNNs, to classify mu
 
 ## 📝 Overview
 
-The goal of this project is to build and evaluate different neural network architectures for their ability to distinguish the unique stylistic signatures of various classical composers. The current implementation focuses on six composers: Bach, Byrd, Chopin, Handel, Mozart, and Schumann.
+The goal of this project is to build and evaluate different neural network architectures for their ability to distinguish the unique stylistic signatures of various classical composers. The current implementation focuses on six composers: Bach, Beethoven, Chopin, and Mozart.
 
 ## ✨ Features
 
@@ -15,18 +15,15 @@ The goal of this project is to build and evaluate different neural network archi
       * A pure 1D-CNN model
       * A hybrid CNN-LSTM model
   * Generates detailed evaluation reports, training history plots, and confusion matrices.
-  * Includes a simple inference script to predict the composer of a new MIDI file.
 
 ## 💾 Dataset
 
 The dataset consists of MIDI files from six classical composers:
 
   * Johann Sebastian Bach
-  * William Byrd
+  * Ludwig van Beethoven
   * Frédéric Chopin
-  * George Frideric Handel
   * Wolfgang Amadeus Mozart
-  * Robert Schumann
 
 ## ⚙️ Methodology
 
@@ -34,7 +31,6 @@ The project is structured into three modular Jupyter notebooks for a clear and r
 
 1.  **`01_Data_Preprocessing.ipynb`**: Loads all MIDI files, splits the dataset by song to create distinct training and test sets, processes the files into note sequences, builds a vocabulary, and saves the processed data.
 2.  **`02_Model_Training_and_Evaluation.ipynb`**: Loads the preprocessed data, builds the three models (LSTM, CNN, Hybrid), trains them, and evaluates their performance on the test set.
-3.  **`03_Inference.ipynb`**: Loads a saved model and the preprocessor to predict the composer of a new, unseen MIDI file.
 
 
 ## 📂 Project Structure
@@ -44,7 +40,7 @@ composer-classification/
 ├── notebooks/
 │   ├── 01_Data_Preprocessing.ipynb
 │   ├── 02_Model_Training_and_Evaluation.ipynb
-│   └── 03_Inference.ipynb
+│   
 ├── data/
 │   └── (Raw MIDI files for each composer)
 ├── processed_data_split/
